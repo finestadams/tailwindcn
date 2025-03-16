@@ -18,11 +18,6 @@
     "tailwindcss": "^4.0.6",
     "@repo/ui": "workspace:*"
   },
-  "vercel": {
-    "ignoreBuildStep": [
-      "@repo/ui"
-    ]
-  },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.4",
     "@eslint/js": "^9.19.0",
