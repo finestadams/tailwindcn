@@ -1,28 +1,35 @@
 @import "tailwindcss";
 
+/* Primary Colors */
 @theme {
-  /* Primary Colors */
-  --color-primary: theme('colors.blue.500');
-  --color-secondary: theme('colors.gray.500');
-  --color-foreground-primary: theme('colors.white'); /* Text color for primary background */
-  --color-foreground-secondary: theme('colors.black'); /* Text color for secondary background */
+  --color-primary: theme("colors.blue.500");
+  --color-alternative: theme("colors.slate.500");
+  --color-foreground-primary: theme("colors.white"); /* Text color for primary background */
+  --color-foreground-alternative: theme("colors.white"); /* Text color for alternative background */
 
   /* Neutral Colors */
-  --color-ghost: theme('colors.gray.100');
-  --color-outline: theme('colors.gray.300');
+  --color-ghost: theme("colors.gray.100");
+  --color-outline: theme("colors.gray.300");
 
   /* Feedback & Links */
-  --color-link: theme('colors.blue.600');
-  --color-danger: theme('colors.red.500');
-  --color-foreground-danger: theme('colors.white'); /* Text color for danger */
+  --color-link: theme("colors.blue.600");
+  --color-danger: theme("colors.red.500");
+  --color-foreground-danger: theme("colors.white"); /* Text color for danger */
 
   /* Dynamic Variations */
   --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
   --color-primary-active: color-mix(in oklch, var(--color-primary) 70%, black);
-  --color-secondary-hover: color-mix(in oklch, var(--color-secondary) 85%, white);
-  --color-secondary-active: color-mix(in oklch, var(--color-secondary) 70%, black);
+  --color-alternative-hover: color-mix(in oklch, var(--color-alternative) 85%, white);
+  --color-alternative-active: color-mix(in oklch, var(--color-alternative) 70%, black);
   --color-danger-hover: color-mix(in oklch, var(--color-danger) 85%, white);
   --color-danger-active: color-mix(in oklch, var(--color-danger) 70%, black);
   --color-link-hover: color-mix(in oklch, var(--color-link) 85%, white);
   --color-link-active: color-mix(in oklch, var(--color-link) 70%, black);
+
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(to right, var(--color-primary), var(--color-primary-hover), var(--color-primary-active));
+  --gradient-duotone: linear-gradient(to bottom right, var(--color-primary), var(--color-link));
+  --gradient-outline: linear-gradient(to bottom right, var(--color-primary), var(--color-link));
+  --gradient-shadow: linear-gradient(to right, var(--color-primary), var(--color-primary-hover), var(--color-primary-active));
 }
+
