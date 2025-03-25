@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as o}from"./index-CePRvBtH.js";import{M as l}from"./index-DlUyMPay.js";import"./index-DmM0KDA7.js";import"./iframe-EPY1dofB.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function r(i){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",pre:"pre",ul:"ul",...o(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(l,{title:"Introduction"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as o}from"./index-CePRvBtH.js";import{M as l}from"./index-DXLXjHmI.js";import"./index-DmM0KDA7.js";import"./iframe-CPNwq3eD.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function r(i){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",li:"li",p:"p",pre:"pre",ul:"ul",...o(),...i.components};return n.jsxs(n.Fragment,{children:[n.jsx(l,{title:"Introduction"}),`
 `,n.jsx(e.h1,{id:"tailwindcn---the-ultimate-ui-component-library",children:"TailwindCN - The Ultimate UI Component Library"}),`
 `,n.jsx(e.p,{children:"TailwindCN is a modular and customizable UI component library designed for modern React applications. It provides pre-built, highly accessible components with support for Tailwind CSS."}),`
 `,n.jsx(e.h2,{id:"-getting-started",children:"🚀 Getting Started"}),`
@@ -58,38 +58,59 @@ export function cn(...inputs: any[]) {
 `,n.jsxs(e.p,{children:["Ensure your global ",n.jsx(e.code,{children:"styles.css"})," includes:"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`@import "tailwindcss";
 
-/* Primary Colors */
---color-primary: theme("colors.blue.500");
---color-secondary: theme("colors.gray.500");
---color-foreground-primary: theme(
-  "colors.white"
-); /* Text color for primary background */
---color-foreground-secondary: theme(
-  "colors.black"
-); /* Text color for secondary background */
+@theme {
+  --color-primary: theme("colors.blue.500");
+  --color-alternative: theme("colors.slate.500");
+  --color-foreground-primary: theme("colors.white");
+  --color-foreground-alternative: theme("colors.white");
 
-/* Neutral Colors */
---color-ghost: theme("colors.gray.100");
---color-outline: theme("colors.gray.300");
+  --color-ghost: theme("colors.gray.100");
+  --color-outline: theme("colors.gray.300");
 
-/* Feedback & Links */
---color-link: theme("colors.blue.600");
---color-danger: theme("colors.red.500");
---color-foreground-danger: theme("colors.white"); /* Text color for danger */
+  --color-link: theme("colors.blue.600");
+  --color-danger: theme("colors.red.500");
+  --color-foreground-danger: theme("colors.white");
 
-/* Dynamic Variations */
---color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
---color-primary-active: color-mix(in oklch, var(--color-primary) 70%, black);
---color-secondary-hover: color-mix(in oklch, var(--color-secondary) 85%, white);
---color-secondary-active: color-mix(
-  in oklch,
-  var(--color-secondary) 70%,
-  black
-);
---color-danger-hover: color-mix(in oklch, var(--color-danger) 85%, white);
---color-danger-active: color-mix(in oklch, var(--color-danger) 70%, black);
---color-link-hover: color-mix(in oklch, var(--color-link) 85%, white);
---color-link-active: color-mix(in oklch, var(--color-link) 70%, black);
+  --color-primary-hover: color-mix(in oklch, var(--color-primary) 85%, white);
+  --color-primary-active: color-mix(in oklch, var(--color-primary) 70%, black);
+  --color-alternative-hover: color-mix(
+    in oklch,
+    var(--color-alternative) 85%,
+    white
+  );
+  --color-alternative-active: color-mix(
+    in oklch,
+    var(--color-alternative) 70%,
+    black
+  );
+  --color-danger-hover: color-mix(in oklch, var(--color-danger) 85%, white);
+  --color-danger-active: color-mix(in oklch, var(--color-danger) 70%, black);
+  --color-link-hover: color-mix(in oklch, var(--color-link) 85%, white);
+  --color-link-active: color-mix(in oklch, var(--color-link) 70%, black);
+
+  --gradient-primary: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-hover),
+    var(--color-primary-active)
+  );
+  --gradient-duotone: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    var(--color-link)
+  );
+  --gradient-outline: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    var(--color-link)
+  );
+  --gradient-shadow: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary-hover),
+    var(--color-primary-active)
+  );
+}
 `})}),`
 `,n.jsx(e.h4,{id:"tailwind-css--4",children:"Tailwind CSS < 4"}),`
 `,n.jsxs(e.p,{children:["For Tailwind versions below 4, you can define your color palette in ",n.jsx(e.code,{children:"tailwind.config.ts"}),"."]}),`
