@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-CdGsxv5d.js";import{M as d,S as s}from"./index-DZgmjQzi.js";import{B as l,a as o,P as c,O as h,D as a,b as x,F as j,I as u,S as p,M as m,L as g}from"./Button.stories-D_YnwQqe.js";import"./index-BCtMShv3.js";import"./iframe-Vc-SE_oF.js";import"./index-D-fs5e6L.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function r(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",ul:"ul",...i(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(d,{title:"Components/Button",component:o,of:l}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-CdGsxv5d.js";import{M as d,S as s}from"./index-D46R-wy6.js";import{B as l,a as o,P as c,O as h,D as a,b as x,F as j,I as u,S as p,M as m,L as g}from"./Button.stories-CLafytXx.js";import"./index-BCtMShv3.js";import"./iframe-DOEqUtUo.js";import"./index-D-fs5e6L.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";import"./clsx-B-dksMZM.js";function r(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",hr:"hr",li:"li",p:"p",pre:"pre",ul:"ul",...i(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(d,{title:"Components/Button",component:o,of:l}),`
 `,n.jsx(e.h1,{id:"button",children:"Button"}),`
 `,n.jsxs(e.p,{children:["The ",n.jsx(e.code,{children:"Button"})," component is used to trigger actions or events. It supports multiple variants, sizes, and additional features like icons and full-width styling."]}),`
 `,n.jsx(e.hr,{}),`
@@ -97,4 +97,4 @@ For configuration details, refer to the `,n.jsx(e.a,{href:"?path=/docs/introduct
 `,n.jsxs(e.li,{children:["Use the ",n.jsx(e.code,{children:"variant"})," prop to customize the button's appearance."]}),`
 `,n.jsxs(e.li,{children:["Combine ",n.jsx(e.code,{children:"pill"})," and ",n.jsx(e.code,{children:"fullWidth"})," props for unique designs."]}),`
 `,n.jsxs(e.li,{children:["Use ",n.jsx(e.code,{children:"iconOnly"})," for buttons that only display an icon."]}),`
-`]})]})}function D(t={}){const{wrapper:e}={...i(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(r,{...t})}):r(t)}export{D as default};
+`]})]})}function M(t={}){const{wrapper:e}={...i(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(r,{...t})}):r(t)}export{M as default};

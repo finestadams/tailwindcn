@@ -1,0 +1,221 @@
+import { Meta, Story } from "@storybook/blocks";
+import { Input } from "@repo/ui/input";
+import * as InputStories from "./Input.stories";
+
+<Meta title="Components/Input" component={Input} of={InputStories} />
+
+# Input
+
+The `Input` component is used to capture user input. It supports different sizes, states, and configurations, making it a versatile component for forms and other user interfaces.
+
+---
+
+## Installation
+
+To use the `Input` component in your project, after installing the package:
+For configuration details, refer to the [Configuration Guide](?path=/docs/introduction--docs).
+
+```bash
+wind add input
+```
+
+---
+
+## Usage
+
+Import the `Input` component into your project:
+
+```tsx
+import { Input } from "@component/ui/input";
+```
+
+---
+
+## Examples
+
+### Default Input
+
+The default input field with a placeholder.
+
+```tsx
+<Input placeholder="Enter text" inputSize="md" />
+```
+
+<Story name="Default" of={InputStories.Default} />
+
+---
+
+### Small Input
+
+A small-sized input field.
+
+```tsx
+<Input placeholder="Small Input" inputSize="sm" />
+```
+
+<Story name="Small" of={InputStories.Small} />
+
+---
+
+### Large Input
+
+A large-sized input field.
+
+```tsx
+<Input placeholder="Large Input" inputSize="lg" />
+```
+
+<Story name="Large" of={InputStories.Large} />
+
+---
+
+### Input with Error
+
+An input field with an error message.
+
+```tsx
+<Input placeholder="Enter text" error="This field is required." />
+```
+
+<Story name="WithError" of={InputStories.WithError} />
+
+---
+
+### Input with Icon
+
+An input field with a search icon.
+
+```tsx
+<Input
+  placeholder="Search"
+  icon={
+    <svg
+      className="w-4 h-4 text-gray-500"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path d="M12.9 14.32a8 8 0 111.41-1.41l4.39 4.39a1 1 0 01-1.42 1.42l-4.38-4.4zM8 14a6 6 0 100-12 6 6 0 000 12z" />
+    </svg>
+  }
+/>
+```
+
+<Story name="WithIcon" of={InputStories.WithIcon} />
+
+---
+
+### Disabled Input
+
+A disabled input field.
+
+```tsx
+<Input placeholder="Disabled Input" disabled />
+```
+
+<Story name="Disabled" of={InputStories.Disabled} />
+
+---
+
+## Props
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>Prop</strong>
+      </th>
+      <th>
+        <strong>Type</strong>
+      </th>
+      <th>
+        <strong>Default</strong>
+      </th>
+      <th>
+        <strong>Description</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>inputSize</code>
+      </td>
+      <td>
+        <code>"sm" | "md" | "lg"</code>
+      </td>
+      <td>
+        <code>"md"</code>
+      </td>
+      <td>The size of the input field.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>error</code>
+      </td>
+      <td>
+        <code>string</code>
+      </td>
+      <td>
+        <code>undefined</code>
+      </td>
+      <td>Error message to display below the input.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon</code>
+      </td>
+      <td>
+        <code>React.ReactNode</code>
+      </td>
+      <td>
+        <code>undefined</code>
+      </td>
+      <td>Icon to display inside the input field.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>placeholder</code>
+      </td>
+      <td>
+        <code>string</code>
+      </td>
+      <td>
+        <code>undefined</code>
+      </td>
+      <td>Placeholder text for the input field.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>disabled</code>
+      </td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>false</code>
+      </td>
+      <td>Disables the input field.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>className</code>
+      </td>
+      <td>
+        <code>string</code>
+      </td>
+      <td>
+        <code>undefined</code>
+      </td>
+      <td>Additional classes for the input container.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Notes
+
+- Use the `inputSize` prop to adjust the size of the input field.
+- Combine the `error` prop with validation logic to display error messages.
+- Use the `icon` prop to add icons for better user experience (e.g., search or email icons).
+- The `disabled` prop can be used to disable the input field when necessary.
