@@ -1,0 +1,289 @@
+import { Meta, Story } from "@storybook/blocks";
+import { Button } from "@repo/ui/button";
+import * as ButtonStories from "./Button.stories"; // Import the stories file
+
+<Meta title="Components/Button" component={Button} of={ButtonStories} />
+
+# Button
+
+The `Button` component is used to trigger actions or events. It supports multiple variants, sizes, and additional features like icons and full-width styling.
+
+---
+
+## Installation
+
+To use the `Button` component in your project, after installing the package:
+For configuration details, refer to the [Configuration Guide](?path=/docs/introduction--docs).
+
+```bash
+wind add button
+```
+
+---
+
+## Usage
+
+Import the `Button` component into your project:
+
+```tsx
+import { Button } from "@component/ui/button";
+```
+
+---
+
+## Variants
+
+### Primary Button
+
+The primary button is used for the main action on a page.
+
+```tsx
+<Button variant="primary" size="md">
+  Primary
+</Button>
+```
+
+<Story name="Primary" of={ButtonStories.Primary} />
+
+---
+
+### Outline Button
+
+The outline button is used for secondary actions.
+
+```tsx
+<Button variant="outline" size="md">
+  Outline
+</Button>
+```
+
+<Story name="Outline" of={ButtonStories.Outline} />
+
+---
+
+### Danger Button
+
+The danger button is used for destructive actions, such as deleting data.
+
+```tsx
+<Button variant="danger" size="md">
+  Danger
+</Button>
+```
+
+<Story name="Danger" of={ButtonStories.Danger} />
+
+---
+
+### Pill Button
+
+The pill button has rounded corners for a softer appearance.
+
+```tsx
+<Button variant="primary" size="md" pill>
+  Pill Button
+</Button>
+```
+
+<Story name="Pill" of={ButtonStories.Pill} />
+
+---
+
+### Full Width Button
+
+The full-width button spans the entire width of its container.
+
+```tsx
+<Button variant="primary" size="md" fullWidth>
+  Full Width Button
+</Button>
+```
+
+<Story name="Full Width" of={ButtonStories.FullWidth} />
+
+---
+
+### Icon Only Button
+
+The icon-only button displays only an icon without any text.
+
+```tsx
+<Button variant="primary" size="md" iconOnly icon="⭐" />
+```
+
+<Story name="Icon Only" of={ButtonStories.IconOnly} />
+
+---
+
+## Sizes
+
+### Small Button
+
+The small button is used when space is limited.
+
+```tsx
+<Button variant="primary" size="sm">
+  Small Button
+</Button>
+```
+
+<Story name="Small" of={ButtonStories.Small} />
+
+---
+
+### Medium Button
+
+The medium button is the default size.
+
+```tsx
+<Button variant="primary" size="md">
+  Medium Button
+</Button>
+```
+
+<Story name="Medium" of={ButtonStories.Medium} />
+
+---
+
+### Large Button
+
+The large button is used for emphasis or when more space is available.
+
+```tsx
+<Button variant="primary" size="lg">
+  Large Button
+</Button>
+```
+
+<Story name="Large" of={ButtonStories.Large} />
+
+---
+
+## Props
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <strong>Prop</strong>
+      </th>
+      <th>
+        <strong>Type</strong>
+      </th>
+      <th>
+        <strong>Default</strong>
+      </th>
+      <th>
+        <strong>Description</strong>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>variant</code>
+      </td>
+      <td>
+        <code>string</code>
+      </td>
+      <td>
+        <code>"primary"</code>
+      </td>
+      <td>
+        Defines the button's style variant (e.g., <code>primary</code>,{" "}
+        <code>outline</code>, <code>danger</code>, <code>dark</code>,{" "}
+        <code>gradientMonochrome</code>, <code>gradientDuotone</code>,{" "}
+        <code>colorShadow</code>).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>size</code>
+      </td>
+      <td>
+        <code>string</code>
+      </td>
+      <td>
+        <code>"md"</code>
+      </td>
+      <td>
+        Specifies the button size (<code>sm</code>, <code>md</code>,{" "}
+        <code>lg</code>).
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>fullWidth</code>
+      </td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>false</code>
+      </td>
+      <td>
+        If <code>true</code>, the button spans the full width of its container.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>pill</code>
+      </td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>false</code>
+      </td>
+      <td>
+        If <code>true</code>, the button has rounded corners.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>iconOnly</code>
+      </td>
+      <td>
+        <code>boolean</code>
+      </td>
+      <td>
+        <code>false</code>
+      </td>
+      <td>
+        If <code>true</code>, the button displays only an icon without text.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <code>icon</code>
+      </td>
+      <td>
+        <code>ReactNode | string</code>
+      </td>
+      <td>
+        <code>""</code>
+      </td>
+      <td>The icon to display inside the button.</td>
+    </tr>
+    <tr>
+      <td>
+        <code>children</code>
+      </td>
+      <td>
+        <code>ReactNode</code>
+      </td>
+      <td>
+        <code>""</code>
+      </td>
+      <td>The content displayed inside the button.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Notes
+
+- Use the `variant` prop to customize the button's appearance.
+- Combine `pill` and `fullWidth` props for unique designs.
+- Use `iconOnly` for buttons that only display an icon.
